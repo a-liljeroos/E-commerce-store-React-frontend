@@ -1,0 +1,61 @@
+@import "../../Colors.scss";
+
+.navFrame {
+  height: 120px;
+  border-bottom: 3px solid $bg-color2;
+  display: flex;
+
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.NavHeaderContainer {
+  color: $font-color-header;
+  font-family: "Abril Fatface", cursive;
+  font-size: 2em;
+  padding-bottom: 8px;
+}
+
+.navSearchContainer {
+  background-color: $nav-searchbar-color;
+  border: 1px solid black;
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.navSearchForm {
+  display: flex;
+  height: 100%;
+}
+
+.navSearchInput {
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  font-size: 1.2em;
+  margin-left: 10px;
+}
+
+.navSearchInput:focus,
+.navSearchInput:active {
+  outline: none;
+}
+
+.navSearchButton {
+  width: 40px;
+  border: none;
+  background-color: transparent;
+}
+
+.navCustomerPathsContainer {
+  padding-inline: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.navCustomerPathBtn {
+  background-color: transparent;
+  border: none;
+}
