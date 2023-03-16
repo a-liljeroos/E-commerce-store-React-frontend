@@ -1,1 +1,27 @@
 @import "../../Colors.scss";
+
+.productCarouselContainer {
+  display: flex;
+  width: 700px;
+  overflow-y: scroll;
+}
+
+.productCardFrame {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  border: 1px solid black;
+}
+
+.productScaledImg {
+  width: 90%;
+  aspect-ratio: 2/2;
+  object-fit: contain;
+}
+
+.productTitle {
+  font-size: 1em;
+}
+
+.productBrand {
+}

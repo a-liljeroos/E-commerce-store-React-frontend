@@ -1,7 +1,19 @@
-import styles from "ProductCarousel.module.scss";
+import styles from "./ProductCarousel.module.scss";
+import { TProduct } from "../../Types";
+import ProductCard from "./ProductCard";
 
-const ProductCarousel = () => {
-  return <div>ProductCarousel</div>;
+interface IProductCarousel {
+  products: TProduct[];
+}
+
+const ProductCarousel = ({ products }: IProductCarousel) => {
+  return (
+    <div className={styles.productCarouselContainer}>
+      {products.map((product) => {
+        return <ProductCard product={product} />;
+      })}
+    </div>
+  );
 };
 
 export default ProductCarousel;
