@@ -2,19 +2,33 @@
 
 .productCarouselContainer {
   display: flex;
-  width: 700px;
+  width: 600px;
   overflow-y: scroll;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  scroll-behavior: smooth;
 }
 
 .productCardFrame {
   display: flex;
   flex-direction: column;
-  width: 200px;
-  border: 1px solid black;
+  min-width: 200px;
+  max-width: 200px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 0 8px rgba(66, 66, 66, 0.178);
+  cursor: pointer;
+  transition: 150ms;
+}
+
+.productCardFrame:hover {
+  box-shadow: none;
 }
 
 .productScaledImg {
-  width: 90%;
+  width: 100%;
   aspect-ratio: 2/2;
   object-fit: contain;
 }
@@ -24,4 +38,5 @@
 }
 
 .productBrand {
+  font-weight: 300;
 }
