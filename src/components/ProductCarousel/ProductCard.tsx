@@ -15,7 +15,9 @@ const ProductCard = ({ product }: IProductCard) => {
       />
       <h2 className={styles.productTitle}>{product.title}</h2>
       <div className={styles.productBrand}>{product.brand}</div>
-      <span>{product.price + " €"}</span>
+      <div className={styles.productCardDivider} />
+      <span className={styles.productPrice}>{product.price + " €"}</span>
+      <button className={styles.buyButton}>Osta</button>
     </div>
   );
 };

@@ -2,21 +2,24 @@
 
 .productCarouselContainer {
   display: flex;
-  width: 600px;
+
   overflow-y: scroll;
   text-align: left;
-  font-family: "Lato", sans-serif;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
   scroll-behavior: smooth;
 }
 
+.productCarouselContainer::-webkit-scrollbar {
+  display: none;
+}
 .productCardFrame {
   display: flex;
   flex-direction: column;
   min-width: 200px;
   max-width: 200px;
-  padding: 10px;
+  height: 350px;
+  padding: 15px;
   margin: 10px;
   box-shadow: 0 0 8px rgba(66, 66, 66, 0.178);
   cursor: pointer;
@@ -39,4 +42,25 @@
 
 .productBrand {
   font-weight: 300;
+}
+
+.productCardDivider {
+  height: 100%;
+}
+
+.productPrice {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: red;
+  padding-block: 4px;
+}
+
+.buyButton {
+  background-color: $bg-color1;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 7px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
 }
