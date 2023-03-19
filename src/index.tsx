@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { BrowserRouter } from "react-router-dom";
+import { ShoppingCartProvider } from "./context/ShoppingCartContext";
 
 const queryClient = new QueryClient();
 
@@ -14,10 +15,12 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <QueryClientProvider client={queryClient}>
-        <App />
-        {/* <ReactQueryDevtools initialIsOpen={true} /> */}
-      </QueryClientProvider>
+      <ShoppingCartProvider>
+        <QueryClientProvider client={queryClient}>
+          <App />
+          {/* <ReactQueryDevtools initialIsOpen={true} /> */}
+        </QueryClientProvider>
+      </ShoppingCartProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

@@ -21,7 +21,7 @@
   height: 350px;
   padding: 15px;
   margin: 10px;
-  box-shadow: 0 0 8px rgba(66, 66, 66, 0.178);
+  box-shadow: 0 0 8px $shadow-color;
   cursor: pointer;
   transition: 150ms;
 }

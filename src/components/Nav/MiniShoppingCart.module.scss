@@ -1,0 +1,99 @@
+@import "../../Colors.scss";
+
+.smallCartFrame {
+  position: absolute;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transform: translate(-55%, 0%);
+  top: 75px;
+  right: 40px;
+  box-shadow: 0px 0px 10px $shadow-color;
+  padding: 10px;
+}
+
+.smallCartTitle {
+  padding: 10px;
+}
+
+.smallCartItems {
+  padding: 10px;
+}
+
+.smallCartButtonsFrame {
+  display: flex;
+}
+
+.smallCartButton {
+  margin: 5px;
+  border: none;
+  padding: 5px;
+  background-color: $bg-color1;
+  width: 100px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.miniProductCardFrame {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  padding: 5px;
+  gap: 15px;
+  border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.miniProductCardEmpty {
+  width: 350px;
+  padding-block: 30px;
+}
+
+.miniProductCardImg {
+  width: 50px;
+  aspect-ratio: 2/2;
+  object-fit: contain;
+}
+
+.miniProductCardItemInfo {
+  text-align: left;
+  width: 220px;
+}
+
+.miniProductCardItemTitle {
+  font-weight: 600;
+}
+
+.miniProductCardItemAmounts {
+  border: 1px solid rgb(182, 182, 182);
+}
+
+.miniProductCardItemQuantity {
+  padding: 8px;
+}
+
+.miniProductCardQuantityBtn {
+  cursor: pointer;
+  padding: 10px 15px 10px 15px;
+  height: initial;
+  font-weight: 800;
+  border: none;
+  background-color: $bg-color1;
+}
+
+.miniProductCardTotalPrice {
+  width: 100%;
+  padding-inline: 15px;
+  padding-block: 15px;
+  text-align: right;
+  font-size: 1.4rem;
+}
+
+.miniProductCardPrices {
+}
+
+.miniProductCardPrice {
+  font-weight: 500;
+}
