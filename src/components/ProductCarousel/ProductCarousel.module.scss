@@ -3,8 +3,7 @@
 .productCarouselContainer {
   display: flex;
   flex-wrap: wrap;
-  width: 100vw;
-
+  margin: 20px;
   text-align: left;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -52,7 +51,7 @@
 .productPrice {
   font-size: 1.2em;
   font-weight: 600;
-  color: red;
+  color: rgb(255, 46, 46);
   padding-block: 4px;
 }
 
