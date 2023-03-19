@@ -2,8 +2,9 @@
 
 .productCarouselContainer {
   display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
 
-  overflow-y: scroll;
   text-align: left;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */

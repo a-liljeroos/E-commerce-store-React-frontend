@@ -83,7 +83,7 @@ const MiniProductCard = ({ product, quantity }: IMiniProductCard) => {
         >
           -
         </button>
-        <span className={styles.miniProductCardItemQuantity}> {quantity}</span>
+        <div className={styles.miniProductCardItemQuantity}> {quantity}</div>
         <button
           onClick={() => increaseCartQuantity(product)}
           className={styles.miniProductCardQuantityBtn}
