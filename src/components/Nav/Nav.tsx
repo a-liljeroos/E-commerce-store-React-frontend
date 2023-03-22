@@ -1,6 +1,7 @@
 import styles from "./Nav.module.scss";
 import NavCustomerPaths from "./NavCustomerPaths";
 import NavSearchItems from "./NavSearchItems";
+import NavSearchResults from "./NavSearchResults";
 import NavTitle from "./NavTitle";
 
 const Nav = () => {
@@ -9,6 +10,7 @@ const Nav = () => {
       <NavTitle />
       <NavSearchItems />
       <NavCustomerPaths />
+      <NavSearchResults />
     </div>
   );
 };

@@ -13,6 +13,7 @@ const ProductCard = ({ product }: IProductCard) => {
     decreaseCartQuantity,
     removeFromCart,
   } = useShoppingCart();
+
   return (
     <div className={styles.productCardFrame}>
       <img
@@ -25,7 +26,9 @@ const ProductCard = ({ product }: IProductCard) => {
       <div className={styles.productCardDivider} />
       <span className={styles.productPrice}>{product.price + " €"}</span>
       <button
-        onClick={() => increaseCartQuantity(product)}
+        onClick={() => {
+          increaseCartQuantity(product);
+        }}
         className={styles.buyButton}
       >
         Osta

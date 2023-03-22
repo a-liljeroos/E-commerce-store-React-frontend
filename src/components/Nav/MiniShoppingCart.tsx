@@ -1,5 +1,5 @@
 import styles from "./MiniShoppingCart.module.scss";
-import { Dispatch, SetStateAction, useEffect } from "react";
+import { Dispatch, SetStateAction } from "react";
 import { useShoppingCart } from "../../context/ShoppingCartContext";
 import { TProduct } from "../../Types";
 

@@ -75,3 +75,12 @@
   color: white;
   font-weight: 700;
 }
+
+.searchResultsFrame {
+  position: absolute;
+  top: 120px;
+  height: calc(100% - 120px);
+  width: 100vw;
+  background-color: rgba(146, 146, 146, 0.336);
+  backdrop-filter: blur(4px);
+}

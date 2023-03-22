@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { BrowserRouter } from "react-router-dom";
 import { ShoppingCartProvider } from "./context/ShoppingCartContext";
+import { NavSearchContextProvider } from "./context/NavSearchContext";
 
 const queryClient = new QueryClient();
 
@@ -16,10 +17,12 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <ShoppingCartProvider>
-        <QueryClientProvider client={queryClient}>
-          <App />
-          {/* <ReactQueryDevtools initialIsOpen={true} /> */}
-        </QueryClientProvider>
+        <NavSearchContextProvider>
+          <QueryClientProvider client={queryClient}>
+            <App />
+            {/* <ReactQueryDevtools initialIsOpen={true} /> */}
+          </QueryClientProvider>
+        </NavSearchContextProvider>
       </ShoppingCartProvider>
     </BrowserRouter>
   </React.StrictMode>
