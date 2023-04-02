@@ -4,9 +4,10 @@ import { useShoppingCart } from "../../context/ShoppingCartContext";
 
 interface IProductCard {
   product: TProduct;
+  transparentBg: boolean;
 }
 
-const ProductCard = ({ product }: IProductCard) => {
+const ProductCard = ({ product, transparentBg }: IProductCard) => {
   const {
     getItemQuantity,
     increaseCartQuantity,
@@ -15,7 +16,13 @@ const ProductCard = ({ product }: IProductCard) => {
   } = useShoppingCart();
 
   return (
-    <div className={styles.productCardFrame}>
+    <div
+      className={
+        transparentBg
+          ? styles.productCardFrame
+          : styles.productCardFrame + " " + styles.coloredCardFrame
+      }
+    >
       <img
         className={styles.productScaledImg}
         src={product.scaled_image}

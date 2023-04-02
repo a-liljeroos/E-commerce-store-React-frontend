@@ -20,7 +20,7 @@ const NavSearchResults = () => {
   return (
     <div className={styles.searchResultsFrame}>
       {data?.map((product) => {
-        return <ProductCard product={product} />;
+        return <ProductCard product={product} transparentBg={false} />;
       })}
     </div>
   );

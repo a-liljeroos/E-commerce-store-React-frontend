@@ -10,7 +10,7 @@ const ProductCarousel = ({ products }: IProductCarousel) => {
   return (
     <div className={styles.productCarouselContainer}>
       {products.map((product) => {
-        return <ProductCard product={product} />;
+        return <ProductCard product={product} transparentBg={true} />;
       })}
     </div>
   );
