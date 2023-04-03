@@ -1,5 +1,6 @@
 import styles from "./Nav.module.scss";
 import { BsSearch } from "react-icons/bs";
+import { RxCross2 } from "react-icons/rx";
 import { useNavSearch } from "../../context/NavSearchContext";
 import { validateSearchInput } from "../Utilities/validateInput";
 import { useState } from "react";
@@ -23,9 +24,20 @@ const NavSearchItems = () => {
     setShowErrorMsg(true);
   }
 
+  function emptyField() {
+    setSearchForm("");
+  }
+
   return (
     <div className={styles.navSearchContainer}>
-      <form action="get" role="search" className={styles.navSearchForm}>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+        }}
+        action="get"
+        role="search"
+        className={styles.navSearchForm}
+      >
         {showErrorMsg ? (
           <div className={styles.searchErrorMsg}>
             Erikoismerkit ja numerot ei sallittuja
@@ -44,9 +56,16 @@ const NavSearchItems = () => {
             updateField(e.target.value);
           }}
         />
-        <button className={styles.navSearchButton} type="submit">
-          <BsSearch size={20} color="black" />
-        </button>
+        {searchForm && (
+          <button
+            className={styles.navEmptyField}
+            onClick={() => {
+              emptyField();
+            }}
+          >
+            <RxCross2 size={28} color="black" />
+          </button>
+        )}
       </form>
     </div>
   );

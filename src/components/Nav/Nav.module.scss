@@ -74,6 +74,15 @@
   background-color: transparent;
 }
 
+.navEmptyField {
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  padding-top: 5px;
+  height: 100%;
+  width: 44px;
+}
+
 .navCustomerPathsContainer {
   padding-inline: 10px;
   display: flex;
