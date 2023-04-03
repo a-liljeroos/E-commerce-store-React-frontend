@@ -1,5 +1,6 @@
 import { useNavSearch } from "../../context/NavSearchContext";
 import { useNavSearchFetch } from "../Hooks/useNavSearchFetch";
+import PcardsSortBySubItemGroup from "../ProductCarousel/PcardsSortBySubItemGroup";
 import ProductCard from "../ProductCarousel/ProductCard";
 import styles from "./Nav.module.scss";
 
@@ -9,20 +10,27 @@ const NavSearchResults = () => {
     searchTerms: apiSearchTerms,
   });
 
-  if (data?.length === 0 && !apiSearchTerms) {
-    <div className={styles.searchResultsFrame}></div>;
+  if (isError) {
+    return <> error</>;
+  }
+  if (isLoading || !data) {
+    return <> Loading</>;
   }
 
-  if (data?.length === 0) {
-    <div className={styles.searchResultsFrame}>Ei tuotteita</div>;
+  const products = data.products;
+  const itemSubGroups = data.itemSubGroups;
+
+  if (products.length == 0) {
+    return <div className={styles.searchResultsFrame}>Ei osumia</div>;
   }
 
   return (
-    <div className={styles.searchResultsFrame}>
-      {data?.map((product) => {
-        return <ProductCard product={product} transparentBg={false} />;
-      })}
-    </div>
+    <>
+      <PcardsSortBySubItemGroup
+        products={products}
+        itemSubGroups={itemSubGroups}
+      />
+    </>
   );
 };
 

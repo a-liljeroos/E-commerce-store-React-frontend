@@ -6,10 +6,15 @@ interface IuseNavSearchFetch {
   searchTerms: string;
 }
 
+type FetchResult = {
+  itemSubGroups: string[];
+  products: TProduct[];
+};
+
 const useNavSearchFetch = ({ searchTerms }: IuseNavSearchFetch) => {
   const { data, isLoading, isError, error } = useQuery({
     queryKey: ["navSearchFetch", searchTerms],
-    queryFn: async (): Promise<TProduct[]> => {
+    queryFn: async (): Promise<FetchResult> => {
       const res = await fetch(
         `${URL}/api/tuotteet/nav-search?searchTerms=${searchTerms}`,
         {

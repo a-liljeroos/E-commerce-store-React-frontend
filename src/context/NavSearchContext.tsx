@@ -29,10 +29,9 @@ export function NavSearchContextProvider({
   const [searchForm, setSearchForm] = useState<string>("");
   const [apiSearchTerms, setApiSearchTermsState] = useState<string>("");
 
-  const deBouncedFunction = useDebounce(
-    () => setApiSearchTermsState(searchForm),
-    1000
-  );
+  const deBouncedFunction = useDebounce(() => {
+    setApiSearchTermsState(searchForm);
+  }, 1000);
 
   useEffect(() => {
     deBouncedFunction();
