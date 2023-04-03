@@ -26,8 +26,33 @@
 }
 
 .navSearchForm {
+  position: relative;
   display: flex;
   height: 100%;
+}
+
+.searchErrorMsg {
+  position: absolute;
+  top: -32px;
+  left: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  padding: 5px;
+  background-color: rgb(252, 80, 80);
+  border-radius: 5px;
+  animation: showErrorMsg 300ms ease-in-out;
+}
+
+@keyframes showErrorMsg {
+  from {
+    top: 0px;
+    opacity: 0;
+  }
+  to {
+    top: -32px;
+    opacity: 1;
+  }
 }
 
 .navSearchInput {
