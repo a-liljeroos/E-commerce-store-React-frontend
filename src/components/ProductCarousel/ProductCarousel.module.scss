@@ -18,48 +18,68 @@
   position: absolute;
   top: 120px;
   width: 100%;
-  background-color: rgba(146, 146, 146, 0.295);
-  backdrop-filter: blur(8px);
+  background-color: rgba(190, 190, 190, 0.315);
+  backdrop-filter: blur(15px);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding-top: 30px;
   padding-bottom: 50px;
 }
 
 .sortingPickerFrame {
+  position: relative;
   width: 90%;
-
-  background-color: rgba(255, 255, 255, 0.562);
-  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.884);
+  border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 5px;
+  padding: 20px;
   margin: 5px;
+  text-transform: uppercase;
 }
 
-.inputCont {
-  border-bottom: 2px solid rgba(80, 80, 80, 0.596);
-  margin: 10px;
-  margin-left: 30px;
+.pickerInputCont {
   padding: 5px;
+  padding-left: 8px;
+  margin: 3px;
+  border-radius: 5px;
 }
 
-.inputContLabel {
+.pickerInputLabel {
   font-size: 20px;
+  display: flex;
+  gap: 5px;
   position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.inputContInput {
-  position: absolute;
-  margin-left: 10px;
-  top: 3px;
-  right: -25px;
-  width: 20px;
-  height: 20px;
-  background-color: white;
+.pickerInput {
+  opacity: 0.8;
+}
+
+.pickerInputLabel .pickerInput {
+  height: 25px;
+  width: 25px;
   cursor: pointer;
+}
+
+.pickerRefreshBtn {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  border: none;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding-top: 3px;
 }
 
 .productCardFrame {
