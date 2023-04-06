@@ -18,3 +18,5 @@
 <img src="https://github.com/a-liljeroos/E-commerce-store-React-frontend/blob/main/images/kauppatori-preview-1.JPG?raw=true">
 </br>
 <img src="https://github.com/a-liljeroos/E-commerce-store-React-frontend/blob/main/images/kauppatori-preview-2.JPG?raw=true">
+</br>
+<img src="https://github.com/a-liljeroos/E-commerce-store-React-frontend/blob/main/images/kauppatori-preview-3.JPG?raw=true">
