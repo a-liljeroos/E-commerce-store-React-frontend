@@ -5,13 +5,18 @@
 <h2>Using technologies:</h2>
 <ul>
   <li>NodeJS</li>
-    <li>Typescript</li>
-    <li>Local storage</li>
+  <li>Typescript</li>
+  <li>Local storage</li>
   <li>react-query, useContext, sass</li>
-
 </ul>
 
-<p>Includes some webstore functionalities like shopping cart, database calls from an API, frontend design etc.</p>
+<p>Includes some webstore functionalities</p>
+
+<ul>
+  <li>react-query api calls</li>
+  <li>shopping cart with react useContext</li>
+  <li>main search with keyword and result filtering by product group</li>
+</ul>
 
 <h2>Preview</h2>
 
