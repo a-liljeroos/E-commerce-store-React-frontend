@@ -1,8 +1,8 @@
 import { useNavSearch } from "../../context/NavSearchContext";
 import styles from "./Nav.module.scss";
 import NavCustomerPaths from "./NavCustomerPaths";
-import NavSearchItems from "./NavSearchItems";
-import NavSearchResults from "./NavSearchResults";
+import NavSearchItems from "./NavSearch/NavSearchItems";
+import NavSearchResults from "./NavSearch/NavSearchResults";
 import NavTitle from "./NavTitle";
 
 const Nav = () => {

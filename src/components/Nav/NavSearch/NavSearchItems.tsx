@@ -1,8 +1,8 @@
-import styles from "./Nav.module.scss";
-import { BsSearch } from "react-icons/bs";
+import styles from "./NavSearch.module.scss";
+/* import { BsSearch } from "react-icons/bs"; */
 import { RxCross2 } from "react-icons/rx";
-import { useNavSearch } from "../../context/NavSearchContext";
-import { validateSearchInput } from "../Utilities/validateInput";
+import { useNavSearch } from "../../../context/NavSearchContext";
+import { validateSearchInput } from "../../Utilities/validateInput";
 import { useState } from "react";
 
 const NavSearchItems = () => {

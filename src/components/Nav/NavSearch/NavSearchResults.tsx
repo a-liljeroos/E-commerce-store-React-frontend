@@ -1,8 +1,7 @@
-import { useNavSearch } from "../../context/NavSearchContext";
-import { useNavSearchFetch } from "../Hooks/useNavSearchFetch";
-import PcardsSortBySubItemGroup from "../ProductCarousel/PcardsSortBySubItemGroup";
-import ProductCard from "../ProductCarousel/ProductCard";
-import styles from "./Nav.module.scss";
+import { useNavSearch } from "../../../context/NavSearchContext";
+import { useNavSearchFetch } from "../../Hooks/useNavSearchFetch";
+import PcardsSortBySubItemGroup from "./PcardsSortBySubItemGroup";
+import styles from "./NavSearch.module.scss";
 
 const NavSearchResults = () => {
   const { apiSearchTerms } = useNavSearch();

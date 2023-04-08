@@ -1,7 +1,7 @@
-import { TProduct } from "../../Types";
-import ProductCard from "./ProductCard";
+import { TProduct } from "../../../Types";
+import ProductCard from "../../ProductCarousel/ProductCard";
 import { useState } from "react";
-import styles from "./ProductCarousel.module.scss";
+import styles from "./NavSearch.module.scss";
 import { VscRefresh } from "react-icons/vsc";
 
 interface IPcardsSortBySubItemGroup {

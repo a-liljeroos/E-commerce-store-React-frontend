@@ -1,0 +1,149 @@
+@import "../../../Colors.scss";
+
+.navSearchContainer {
+  background-color: $nav-searchbar-color;
+  border: 1px solid black;
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.navSearchForm {
+  position: relative;
+  display: flex;
+  height: 100%;
+}
+
+.searchErrorMsg {
+  position: absolute;
+  top: -32px;
+  left: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  padding: 5px;
+  background-color: rgb(252, 80, 80);
+  border-radius: 5px;
+  animation: showErrorMsg 300ms ease-in-out;
+}
+
+@keyframes showErrorMsg {
+  from {
+    top: 0px;
+    opacity: 0;
+  }
+  to {
+    top: -32px;
+    opacity: 1;
+  }
+}
+
+.navSearchInput {
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  font-size: 1.2em;
+  margin-left: 10px;
+}
+
+.navSearchInput:focus,
+.navSearchInput:active {
+  outline: none;
+}
+
+.navSearchButton {
+  width: 40px;
+  border: none;
+  background-color: transparent;
+}
+
+.navEmptyField {
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  padding-top: 5px;
+  height: 100%;
+  width: 44px;
+}
+
+.searchResultsFrame {
+  position: absolute;
+  top: 120px;
+  width: 100%;
+  background-color: rgba(146, 146, 146, 0.295);
+  backdrop-filter: blur(8px);
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.productCardSortFrame {
+  position: absolute;
+  top: 120px;
+  width: 100%;
+  background-color: rgba(190, 190, 190, 0.315);
+  backdrop-filter: blur(15px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.sortingPickerFrame {
+  position: relative;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.884);
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  margin: 5px;
+  text-transform: uppercase;
+}
+
+.pickerInputCont {
+  padding: 5px;
+  padding-left: 8px;
+  margin: 3px;
+  border-radius: 5px;
+}
+
+.pickerInputLabel {
+  font-size: 20px;
+  display: flex;
+  gap: 5px;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.pickerInput {
+  opacity: 0.8;
+}
+
+.pickerInputLabel .pickerInput {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.pickerRefreshBtn {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  border: none;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding-top: 3px;
+}

@@ -17,72 +17,6 @@
   padding-bottom: 8px;
 }
 
-.navSearchContainer {
-  background-color: $nav-searchbar-color;
-  border: 1px solid black;
-  width: 400px;
-  height: 40px;
-  border-radius: 5px;
-}
-
-.navSearchForm {
-  position: relative;
-  display: flex;
-  height: 100%;
-}
-
-.searchErrorMsg {
-  position: absolute;
-  top: -32px;
-  left: 5px;
-  font-size: 15px;
-  font-weight: 600;
-  color: white;
-  padding: 5px;
-  background-color: rgb(252, 80, 80);
-  border-radius: 5px;
-  animation: showErrorMsg 300ms ease-in-out;
-}
-
-@keyframes showErrorMsg {
-  from {
-    top: 0px;
-    opacity: 0;
-  }
-  to {
-    top: -32px;
-    opacity: 1;
-  }
-}
-
-.navSearchInput {
-  border: none;
-  width: 100%;
-  background-color: transparent;
-  font-size: 1.2em;
-  margin-left: 10px;
-}
-
-.navSearchInput:focus,
-.navSearchInput:active {
-  outline: none;
-}
-
-.navSearchButton {
-  width: 40px;
-  border: none;
-  background-color: transparent;
-}
-
-.navEmptyField {
-  cursor: pointer;
-  border: none;
-  background-color: white;
-  padding-top: 5px;
-  height: 100%;
-  width: 44px;
-}
-
 .navCustomerPathsContainer {
   padding-inline: 10px;
   display: flex;
@@ -108,18 +42,4 @@
   padding-top: 2px;
   color: white;
   font-weight: 700;
-}
-
-.searchResultsFrame {
-  position: absolute;
-  top: 120px;
-  width: 100%;
-  background-color: rgba(146, 146, 146, 0.295);
-  backdrop-filter: blur(8px);
-  display: flex;
-
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 50px;
 }
